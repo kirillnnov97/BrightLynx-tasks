@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Программа сложения двух чисел</title>
+ 
+		<script>
+		function addition() {
+			var a = parseFloat(document.getElementById('a').value);
+			var b = parseFloat(document.getElementById('b').value);
+ 
+			if (isNaN(a)==true) a=0.1;
+			if (isNaN(b)==true) b=0.2;
+ 
+			var c = (a*10 + b*10)/10;
+ 
+			document.getElementById('result').innerHTML = a + " + " + b + " = " + c;
+		}
+		</script>
+	</head>
+	<body>
+		<form>
+			<input id="a" type="text" value="0.1"><br>
+			<input id="b" type="text" value="0.2"><br>
+			<input type="button" value="Сложить" onclick="addition();"><br>
+		</form>
+	<div id="result"></div>
+	</body>
+</html>

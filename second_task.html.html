@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UNICODE" />
+		<title>Программа сложения двух чисел</title>
+ 
+		<script>
+		function addition() {
+			var a = document.getElementById('a').value; //cчитываем из поля
+			var x= a.charCodeAt(0)-64; //переводим символ в число через код символа в юникоде
+			var y= parseFloat(a.charAt(1));
+			var answer =' ';
+			//alert(String.fromCharCode(x-2+64)); //для чекпоинта формата ввода
+			if ((x-2>0)&&(y+1<9)) {answer+= String.fromCharCode(x-2+64) + (y+1)+' '}//1 
+
+			if ((x-1>0)&&(y+2<9)) {answer+= String.fromCharCode(x-1+64) + (y+2)+' '}//2
+
+			if ((x+1<9)&&(y+2<9)) {answer+= String.fromCharCode(x+1+64) + (y+2)+' '}//3
+
+			if ((x+2<9)&&(y+1<9)) {answer+= String.fromCharCode(x+2+64) + (y+1)+' '}//4
+
+			if ((x+2<9)&&(y-1>0)) {answer+= String.fromCharCode(x+2+64) + (y-1)+' '}//5
+
+			if ((x+1<9)&&(y-2>0)) {answer+= String.fromCharCode(x+1+64) + (y-2)+' '}//6
+
+			if ((x-1>0)&&(y-2>0)) {answer+= String.fromCharCode(x-1+64) + (y-2)+' '}//7
+
+			if ((x-2>0)&&(y-1>0)) {answer+= String.fromCharCode(x-2+64) + (y-1)+' '}//8
+
+			//alert(answer);
+
+
+
+			document.getElementById('result').innerHTML = answer;
+
+		}
+		</script>
+	</head>
+	<body>
+		<form>
+			<input id="a" type="text" value="D4"><br>
+			<input type="button" value="Результат" onclick="addition();"><br>
+		</form>
+	<div id="result"></div>
+	</body>
+</html>

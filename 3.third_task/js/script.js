@@ -31,7 +31,7 @@ for (var i = 0; i < cards.length; i++) {
   myCards.appendChild(card);
 
   card.onclick = function () { //событие "левый клик"
-    if (this.className != 'flipped' && this.className != 'correct'){
+    if (this.className != 'flipped' && this.className != 'correct'){ // повороты картинкой наверх
         this.className = 'flipped';
         var result = this.dataset.item;
         resultsArray.push(result);
@@ -41,13 +41,13 @@ for (var i = 0; i < cards.length; i++) {
 
 
     if (resultsArray.length > 1) {
-      if (resultsArray[0] === resultsArray[1]) {
+      if (resultsArray[0] === resultsArray[1]) { //апрув верного
         check("correct");
         counter ++;
         win();
         resultsArray = [];
       } else {
-        check("reverse");
+        check("reverse"); //откат неверного
         resultsArray = [];
       }
 

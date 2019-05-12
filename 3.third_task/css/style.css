@@ -1,4 +1,3 @@
-
 body {
   background: #d8d8d8;
   
@@ -31,49 +30,49 @@ div {
 /* Cards */
 .correct[data-item="1"],
 .flipped[data-item="1"] {
-  background: url("img2/1.png") left center no-repeat;
+  background: url("../img2/1.png") left center no-repeat;
   background-size: contain;
 }
 
 .correct[data-item="2"],
 .flipped[data-item="2"] {
-  background: url("img2/2.png") left center no-repeat;
+  background: url("/../img2/2.png") left center no-repeat;
   background-size: contain;
 }
 
 .correct[data-item="3"],
 .flipped[data-item="3"] {
-  background: url("img2/3.png") left center no-repeat;
+  background: url("../img2/3.png") left center no-repeat;
   background-size: contain;
 }
 
 .correct[data-item="4"],
 .flipped[data-item="4"] {
-  background: url("img2/4.png") left center no-repeat;
+  background: url("../img2/4.png") left center no-repeat;
   background-size: contain;
 }
 
 .correct[data-item="5"],
 .flipped[data-item="5"] {
-  background: url("img2/5.png") left center no-repeat;
+  background: url("../img2/5.png") left center no-repeat;
   background-size: contain;
 }
 
 .correct[data-item="6"],
 .flipped[data-item="6"] {
-  background: url("img2/6.png") left center no-repeat;
+  background: url("../img2/6.png") left center no-repeat;
   background-size: contain;
 }
 
 .correct[data-item="7"],
 .flipped[data-item="7"] {
-  background: url("img2/7.png") left center no-repeat;
+  background: url("../img2/7.png") left center no-repeat;
   background-size: contain;
 }
 
 .correct[data-item="8"],
 .flipped[data-item="8"] {
-  background: url("img2/8.png") left center no-repeat;
+  background: url("../img2/8.png") left center no-repeat;
   background-size: contain;
 }
 
@@ -92,7 +91,3 @@ div {
 ░░░░░░█▀▀█████████▀▀▀▀████████████▀░░░░
 ░░░░░░████▀░░███▀░░░░░░▀███░░▀██▀░░░░░░
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-
-
-
-

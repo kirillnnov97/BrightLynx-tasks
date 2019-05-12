@@ -6,9 +6,9 @@
  
 		<script>
 		function addition() {
-			var a = document.getElementById('a').value; //cчитываем из поля
-			var x= a.charCodeAt(0)-64; //переводим элемент строки в число исходя из кода символа
-			var y= parseFloat(a.charAt(1));
+			var a = document.getElementById('a').value; 	 //cчитываем из поля
+			var x= a.charCodeAt(0)-64;			 //переводим элемент строки в число исходя из кода символа
+			var y= parseFloat(a.charAt(1));			 //65-номер "A" в юникоде
 			var answer =' ';
 			//alert(String.fromCharCode(x-2+64)); //для чекпоинта формата ввода
 			if ((x-2>0)&&(y+1<9)) {answer+= String.fromCharCode(x-2+64) + (y+1)+' '}//1 
